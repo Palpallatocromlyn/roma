@@ -1,0 +1,62 @@
+*{box-sizing:border-box;}
+        body {
+            background-color: teal;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 120vh;
+            flex-direction: column;
+        }
+
+   
+
+        input {
+            background-color: white;
+            color: darkgreen;
+            border: 1px solid yellow;
+            padding: 8px 12px;
+            margin: 4px;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        input[type="number"] {
+            width: 100%;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 30px;
+        }
+
+        .container {
+            border: 1px solid teal;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            width: 50%;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+button {
+    background-color: grey; 
+    color: white ;
+    padding: 8px 12px;
+    margin: 4px;
+    border-radius: 4px;
+    width: 100%;
+border:none;
+cursor:pointer;
+}
+
+button:hover{
+    background-color: black; 
+     transform: translateX(0.25%);
+}

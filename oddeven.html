@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>odd or even</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+   <h2>A JavaScript that define odd or even </h2>
+   <div class="container"> 
+    <b><label for="Num">ENTER NUMBER: </label></b>
+    <input type="number" id="Num"><br/>
+
+    <button onclick="check()">CHECK</button><br/><br/>
+    <button onclick="ClearFields()">CLEAR</button><br/><br/>
+    <h1 id="sagot"> ANSWER </h1><br/>
+    <a href="index.html"><button>Back To Homepage</button></a>
+   </div>
+    <script>
+        function check()
+        {
+            var num = parseFloat(document.getElementById('Num').value);
+
+            if (isNaN(num)) {
+                alert("Please enter valid numbers in fields.");
+                return;
+            }
+
+            if (num % 2 == 0){
+                document.getElementById('sagot').innerHTML = 'The number you enter is EVEN' ;
+                document.getElementById('sagot').style.color = 'pink';
+            }
+            else {
+                document.getElementById('sagot').innerHTML = 'The number you enter is ODD';
+                document.getElementById('sagot').style.color = 'AQUAMARINE';
+            }
+        
+        }
+
+        function ClearFields() {
+
+        document.getElementById("Num").value = "";
+        document.getElementById("sagot").innerHTML = "ANSWER...";
+        document.getElementById("sagot").style.color = "GOLD";
+        }
+    </script>
+</body>
+</html>
